@@ -10,16 +10,13 @@
 </head>
 <body> 
     <main>
-        <div class="calcutor">
-            <div class="display">
-                <p id="displayContainer"></p>
-                <p id="numberPlaceholder">0</p>
-            </div>
-            <div class="button">
-                <button id="plusBtn">+</button>
-                <button id="subtractBtn">-</button>
-                <button id="timesBtn">&times;</button>
-                <button id="divideBtn">&divide;</button>
+        <div class="calculator" id="calculator">
+             <input id="display" type="text" class="calculator-screen" value="0" disabled />
+            <div class="calculatorButtons" id="calculatorButtons">
+                <button class="oparator" id="plusBtn">+</button>
+                <button class="oparator"  id="subtractBtn">-</button>
+                <button class="oparator"  id="multipleBtn">&times;</button>
+                <button class="oparator"  id="divideBtn">&divide;</button>
                 <button id="numBtn" onclick="numfunction(9)">9</button>
                 <button id="numBtn" onclick="numfunction(8)">8</button>
                 <button id="numBtn" onclick="numfunction(7)">7</button>
@@ -30,8 +27,9 @@
                 <button id="numBtn" onclick="numfunction(2)">2</button>
                 <button id="numBtn" onclick="numfunction(1)">1</button>
                 <button id="numBtn" onclick="numfunction(0)">0</button>
-                <button id="decimalBtn" onclick="calculate()">&dot;</button>
-                <button id="equalBtn" onclick="calculate()">&equals;</button>
+                <button id="decimalBtn" class="decimal" onclick="calculate()">&dot;</button>
+                <button type="button" class="all-clear" value="all-clear" id="clearAll">AC</button>
+                <button id="equalBtn" class="equals-sign" onclick="calculate()">&equals;</button>
             </div>
         </div>
 
